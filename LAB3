@@ -1,0 +1,3 @@
+def lab_3():
+    while True:
+        user_input = input("Enter two lists of numbers seperated by a comma: ")

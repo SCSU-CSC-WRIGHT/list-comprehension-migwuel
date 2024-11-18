@@ -1,11 +1,11 @@
 def lab_2():
     nums = int(input("Enter a list of numbers, seperated by a space in between: "))
-    number_list = nums.split(' ')
+    number_list = list(int, nums.split())
+    even_list = 0
+    odd_list = 0
+
     for nums in number_list:
-        number_list.append(nums)
-        print(number_list)
-
-    even_list = []
-    odd_list = []
-
-    if number_list // 2 == 0: 
+        if nums % 2 ==  0:
+            even_list += 1
+        else:
+            odd_list += 1
