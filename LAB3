@@ -1,3 +1,15 @@
 def lab_3():
     while True:
         user_input = input("Enter two lists of numbers seperated by a comma: ")
+
+        if user_input.lower() == "exit":
+            break
+
+        list_one = list(int, list_one.split(","))
+        list_two = list(int, list_two.split(","))
+        list_one, list_two = user_input.split()
+        merged_list = list_one + list_two
+        list_three = list(set(merged_list))
+
+        print("Here are both of the lists merged without replicated numbers:", list_three)
+        
